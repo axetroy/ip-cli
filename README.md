@@ -14,6 +14,36 @@ local 192.168.3.15
 public xxx.xxx.xxx
 ```
 
+### Installation
+
+If you are using Linux/MacOS. you can install it with following command:
+
+```shell
+# install latest version
+wget -qO- https://raw.githubusercontent.com/axetroy/ip-cli/master/install.sh | bash
+# or install specified version
+wget -qO- https://raw.githubusercontent.com/axetroy/ip-cli/master/install.sh | bash -s v0.1.0
+```
+
+Or
+
+Download the executable file for your platform at [release page](https://github.com/axetroy/dvs/releases)
+
+Then set the environment variable.
+
+eg, the executable file is in the `~/bin` directory.
+
+```bash
+# ~/.bash_profile
+export PATH="$PATH:~/bin"
+```
+
+finally, try it out.
+
+```bash
+dvs --help
+```
+
 ### Build from source code
 
 Make sure you have `Golang@v1.13.1` installed.
