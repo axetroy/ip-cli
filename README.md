@@ -27,7 +27,7 @@ wget -qO- https://raw.githubusercontent.com/axetroy/ip-cli/master/install.sh | b
 
 Or
 
-Download the executable file for your platform at [release page](https://github.com/axetroy/dvs/releases)
+Download the executable file for your platform at [release page](https://github.com/axetroy/ip-cli/releases)
 
 Then set the environment variable.
 
@@ -41,7 +41,7 @@ export PATH="$PATH:~/bin"
 finally, try it out.
 
 ```bash
-dvs --help
+$ ip
 ```
 
 ### Build from source code
