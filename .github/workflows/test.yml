@@ -8,7 +8,7 @@ jobs:
     timeout-minutes: 30
     strategy:
       matrix:
-        go: ['1.13.5']
+        go: ['1.16.x']
         os: [ubuntu-latest, macOS-latest, windows-latest]
     name: Go ${{ matrix.go }} test in ${{ matrix.os }}
     steps:
@@ -47,6 +47,7 @@ jobs:
         with:
           files: |
             bin/ip_darwin_amd64.tar.gz
+            bin/ip_darwin_arm64.tar.gz
             bin/ip_linux_386.tar.gz
             bin/ip_linux_amd64.tar.gz
             bin/ip_linux_arm.tar.gz
